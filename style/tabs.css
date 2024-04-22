@@ -1,0 +1,98 @@
+.tabs .container {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.tabs h2,
+.tabs .container > p {
+  margin-bottom: 15px;
+}
+
+.tabs p {
+  font-size: 12px;
+}
+.tabs h3 {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.tabs .navigation {
+  margin-bottom: 30px;
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.tabs .btn {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.tabs .button {
+  padding: 10px 20px;
+  background-color: burlywood;
+  color: black;
+  border-radius: 12px;
+}
+
+.tabs .content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.tabs .content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.tabs .hover {
+  opacity: 0;
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  right: 15px;
+  color: white;
+  transition: 0.5s all;
+  padding: 15px 15px;
+  border-radius: 15px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.7231267507002801) 0%,
+    rgba(107, 1, 179, 1) 51%,
+    rgba(57, 5, 91, 1) 70%
+  );
+
+  transform: translateY(-20px);
+}
+
+.tabs .content > div:hover .hover {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tabs .content > div {
+  position: relative;
+}
+
+.tabs .opacity {
+  opacity: 0.4;
+  background: black;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.tabs .content > div:hover .opacity {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .tabs .content {
+    grid-template-columns: 1fr;
+  }
+}

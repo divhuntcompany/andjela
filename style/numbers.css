@@ -1,0 +1,21 @@
+.numbers .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.numbers .number {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 26px;
+}
+.numbers p {
+  font-size: 14px;
+  color: var(--text);
+}
+
+@media only screen and (max-width: 768px) {
+  .numbers .container {
+    grid-template-columns: 1fr;
+  }
+}

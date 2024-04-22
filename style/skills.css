@@ -1,0 +1,64 @@
+.skills {
+  margin: 50px 0;
+}
+.skills h2 {
+  color: var(--brand);
+  margin-bottom: 15px;
+  font-size: 26px;
+  text-align: center;
+}
+
+.skills .container > p {
+  text-align: center;
+  max-width: 560px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.skills h3 {
+  font-size: 14px;
+}
+
+.skills .item {
+  padding: 25px;
+  border-bottom: 1px solid gainsboro;
+  display: flex;
+  gap: 50px;
+}
+
+.skills .item > p {
+  flex: 2;
+}
+
+.skills .item > span {
+  width: 50px;
+}
+
+.skills .item > h3 {
+  flex: 1;
+}
+
+.skills #background {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(
+    90deg,
+    rgba(44, 18, 56, 1) 0%,
+    rgba(165, 75, 187, 0.9528186274509804) 49%,
+    rgba(44, 18, 56, 1) 100%
+  );
+
+  z-index: -1;
+  top: 0;
+}
+
+.skills .items {
+  position: relative;
+}
+
+@media only screen and (max-width: 768px) {
+  .skills .item {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

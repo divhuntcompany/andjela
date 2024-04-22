@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/header.css" />
+    <link rel="stylesheet" href="style/numbers.css" />
+    <link rel="stylesheet" href="style/skills.css" />
+    <link rel="stylesheet" href="style/form.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/tabs.css" />
+    <link rel="stylesheet" href="style/technologies.css" />
+    <link rel="stylesheet" href="style/animation.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.8.5/countUp.min.js"></script>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="fixed">
+        <div class="container">
+          <div class="left">
+            <a href="/"><i class="fa-solid fa-globe"></i></a>
+          </div>
+          <div class="right">
+            <a href="#" data-scroll="about">
+              <p>About Me</p>
+              <div></div>
+            </a>
+
+            <a href="#education" data-scroll="education">
+              <p>Education</p>
+              <div></div>
+            </a>
+            <a href="#" data-scroll="skills">
+              <p>Skills</p>
+              <div></div>
+            </a>
+            <a href="#courses" data-scroll="courses">
+              <p>Courses</p>
+              <div></div>
+            </a>
+
+            <a href="#contact" data-scroll="contact" class="btn">Contact</a>
+          </div>
+          <div class="hamb">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="header" id="about">
+      <div class="container">
+        <div class="left">
+          <div class="center fadeInChildern">
+            <h3>Hello, I'm Andjela</h3>
+            <h1 class="heading">Web Developer</h1>
+            <p>
+              Welcome to my portfolio website! I'm Andjela, and although I'm
+              just at the beginning of my journey in the world of web
+              development, I'm very excited about the opportunities this field
+              offers. With a passion for learning and a curiosity for exploring
+              new technologies, I strive to acquire as much knowledge and skills
+              as possible to become a successful web developer.
+            </p>
+            <div class="action">
+              <a href="" class="btn">Download CV</a>
+              <a
+                href="https://www.linkedin.com/in/andjela-stepanovic-6a02262bb/"
+                class="icon"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+
+              <a href="https://www.instagram.com/djinastepanovic/" class="icon"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="right fadeInLeft">
+          <img src="images/Slika1.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="numbers ignore">
+      <div class="container">
+        <div class="number">
+          <h3 class="countUp">22</h3>
+          <p>Years old</p>
+        </div>
+        <div class="number">
+          <h3 class="countUp">4</h3>
+          <p>Years of study</p>
+        </div>
+        <div class="number">
+          <h3 class="countUp">8</h3>
+          <p>Curses</p>
+        </div>
+        <div class="number">
+          <h3 class="countUp">4</h3>
+          <p>Involvement in Student Organizations</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills" id="education">
+      <div class="container">
+        <h2 class="heading">Education</h2>
+
+        <p>
+          Completed undergraduate studies in Information Systems and
+          Technologies at the Belgrade Academy of Business and Art Vocational
+          Studies. Currently pursuing a master's degree to deepen expertise in
+          web development.
+        </p>
+        <div class="items">
+          <div id="background"></div>
+          <div class="item">
+            <span>01</span>
+            <h3>September 2015 - May 2019</h3>
+            <p>
+              Gymnasium 'Patrijarh Pavle' Belgrade <br />
+              Field of Study: Social-Linguistic
+            </p>
+          </div>
+
+          <div class="item">
+            <span>02</span>
+            <h3>September 2010 - May 2020</h3>
+            <p>
+              Music School 'Marko Tajčević' <br />
+              Primary and Secondary Music School<br />
+              Department: Piano, Flute
+            </p>
+          </div>
+          <div class="item">
+            <span>03</span>
+            <h3>September 2020 - September 2023</h3>
+            <p>
+              Belgrade Academy of Business and Art Vocational Studies <br />
+              Bachelor of Science in Information Systems Engineering
+            </p>
+          </div>
+          <div class="item">
+            <span>04</span>
+            <h3>September 2020 - June 2023</h3>
+
+            <p>
+              Belgrade Academy of Business and Art Vocational Studies <br />
+              Volunteer Work: Student Organization "Fokus"
+            </p>
+          </div>
+          <div class="item">
+            <span>05</span>
+            <h3>November 2022</h3>
+            <p>
+              Belgrade Academy of Business and Art Vocational Studies <br />
+
+              Certificate: Significance of Developing Key Competencies in
+              Vocational College Students
+            </p>
+          </div>
+          <div class="item">
+            <span>06</span>
+            <h3>October 2023</h3>
+            <p>
+              Belgrade Academy of Business and Art Vocational Studies <br />
+              Currently, I am pursuing a master's degree in Information Systems
+              and Technologies
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="tabs" id="courses">
+      <div class="container">
+        <h2 class="heading">Courses</h2>
+        <p>
+          In an effort to continually enhance my skills, I am actively engaged
+          in completing, currently attending, and planning additional courses to
+          expand my knowledge and competencies.
+        </p>
+        <div class="navigation">
+          <button class="button btn">Finished</button>
+          <button class="button btn">In progress</button>
+          <button class="button btn">Planned</button>
+        </div>
+        <div class="content">
+          <div data-group="Finished">
+            <div class="opacity"></div>
+            <img
+              src="https://img-c.udemycdn.com/course/480x270/3223049_5074_2.jpg"
+              alt=""
+            />
+            <div class="hover">
+              <h3>Understanding HTML and CSS</h3>
+              <p>
+                Deeply understand Semantic HTML5, CSS3, Flexbox, Grid, learn to
+                read the specifications, and more.
+              </p>
+              <a
+                href="https://www.udemy.com/course/understanding-html-and-css/?couponCode=GENAISALE24
+              "
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+          <div data-group="Finished">
+            <div class="opacity"></div>
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/5397532_abe9.jpg"
+              alt=""
+            />
+            <div class="hover">
+              <h3>Bootstrap 5 From Scratch</h3>
+              <p>
+                Learn to customize and build modern websites from scratch using
+                Bootstrap 5
+              </p>
+              <a
+                href="https://www.udemy.com/course/bootstrap-from-scratch/?couponCode=GENAISALE24"
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+          <div data-group="Finished">
+            <div class="opacity"></div>
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/5095092_d038_3.jpg"
+              alt=""
+            />
+            <div class="hover">
+              <h3>Professional JavaScript 2023</h3>
+              <p>
+                This is the #1 resource to master modern JavaScript! Learn
+                modern ES6+ JavaScript by building real, beautiful projects.
+              </p>
+              <a
+                href="https://www.udemy.com/course/professional-javascript-course/?couponCode=GENAISALE24"
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+
+          <div data-group="Finished">
+            <div class="opacity"></div>
+            <img
+              src="https://img-c.udemycdn.com/course/240x135/812588_5180_7.jpg
+            "
+              alt=""
+            />
+            <div class="hover">
+              <h3>The Complete jQuery Course</h3>
+              <p>
+                Use jQuery to create stunning animations, provide fast feedback
+                forms, handle all user events and perform Ajax calls.
+              </p>
+              <a
+                href="https://www.udemy.com/course/jquery-tutorial/?couponCode=GENAISALE24"
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+          <div data-group="In progress">
+            <img
+              src="https://img-c.udemycdn.com/course/480x270/4188320_d3e3_3.jpg"
+              alt=""
+            />
+            <div class="hover">
+              <h3>Git & GitHub - The Practical Guide</h3>
+              <p>
+                Learn Git & GitHub and master working with commits, branches,
+                the stash, cherry picking, rebasing, pull requests & more!
+              </p>
+              <a
+                href=" https://www.udemy.com/course/git-github-practical-guide/?couponCode=GENAISALE24"
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+          <div data-group="In progress">
+            <img
+              src="https://img-c.udemycdn.com/course/480x270/756150_c033_2.jpg"
+              alt=""
+            />
+            <div class="hover">
+              <h3>Angular - The Complete Guide (2024 Edition)</h3>
+              <p>
+                Master Angular (formerly "Angular 2") and build awesome,
+                reactive web apps with the successor of Angular.js
+              </p>
+              <a
+                href="https://www.udemy.com/course/the-complete-guide-to-angular-2/?couponCode=GENAISALE24"
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+          <div data-group="Planned">
+            <img
+              src="https://img-c.udemycdn.com/course/480x270/5455710_3a8c_2.jpg"
+              alt=""
+            />
+            <div class="hover">
+              <h3>Figma UI UX Design Advanced</h3>
+              <p>
+                Become a Figma Pro with our in-depth Advanced Figma tutorial
+                course. Discover advanced design strategies & so much more!
+              </p>
+              <a
+                href="https://www.udemy.com/course/figma-ui-ux-design-advanced-tutorial/?couponCode=GENAISALE24"
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+          <div data-group="Planned">
+            <img
+              src="https://img-c.udemycdn.com/course/480x270/4843936_2b76.jpg"
+              alt=""
+            />
+            <div class="hover">
+              <h3>Webflow Essentials Course</h3>
+              <p>
+                Use Webflow to enable you to create responsive, accessible
+                websites without the need for complex coding.
+              </p>
+              <a
+                href="https://www.udemy.com/course/webflow-essentials-course/?couponCode=GENAISALE24
+                "
+                class="btn"
+                >View curse</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="technologies" id="skills">
+      <div class="container">
+        <h2 class="heading">Skills</h2>
+        <p>
+          I enjoy constantly improving and learning new technologies to stay
+          relevant in the world of web development.
+        </p>
+        <div class="items">
+          <div class="item">
+            <img src="images/html-1.svg" alt="" />
+            <p>HTML</p>
+          </div>
+          <div class="item">
+            <img src="images/css-3.svg" alt="" />
+            <p>CSS</p>
+          </div>
+          <div class="item">
+            <img src="images/bootstrap-5-1.svg" alt="" />
+            <p>Bootstrap</p>
+          </div>
+          <div class="item">
+            <img src="images/javascript-1.svg" alt="" />
+            <p>JavaScript</p>
+          </div>
+          <div class="item">
+            <img src="images/jquery-4.svg" alt="" />
+            <p>jQuery</p>
+          </div>
+          <div class="item">
+            <img src="images/angular-icon-1.svg" alt="" />
+            <p>Angular</p>
+          </div>
+          <div class="item">
+            <img src="images/git-bash.svg" alt="" />
+            <p>Git</p>
+          </div>
+          <div class="item">
+            <img src="images/gsap-greensock.svg" alt="" />
+            <p>GSAP</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form" id="contact">
+      <div class="container">
+        <div class="left">
+          <h2 class="heading">Contact me</h2>
+          <p></p>
+          <form action="">
+            <div class="group col-2">
+              <input
+                required
+                type="text"
+                placeholder="First name"
+                name="first_name"
+              />
+              <input
+                required
+                type="text"
+                placeholder="Last name"
+                name="last_name"
+              />
+            </div>
+            <div class="group col-2">
+              <input
+                required
+                type="email"
+                placeholder="Email addres"
+                name="email"
+              />
+              <input type="text" placeholder="Phone number" name="number" />
+            </div>
+
+            <div class="group">
+              <textarea
+                required
+                name="description"
+                id=""
+                cols="30"
+                rows="10"
+                placeholder=" Leave your comment here..."
+              ></textarea>
+            </div>
+            <div class="group">
+              <button type="submit" class="btn">Send Message</button>
+            </div>
+          </form>
+        </div>
+        <div class="right">
+          <div class="center">
+            <div class="item">
+              <div class="left">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="right">
+                <p>Phone</p>
+                <p>0637596675</p>
+              </div>
+            </div>
+            <div class="item">
+              <div class="left">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="right">
+                <p>Email</p>
+                <p>aandjelastepanovic12@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer ignore">
+      <div class="container">
+        <a href="/"><i class="fa-solid fa-globe"></i></a>
+        <div class="menus">
+          <a href="#about" data-scroll="about"
+            >About Me
+            <div></div
+          ></a>
+          <a href="#education" data-scroll="education"
+            >Education
+            <div></div
+          ></a>
+          <a href="#skills" data-scroll="skills"
+            >Skills
+            <div></div
+          ></a>
+          <a href="#courses" data-scroll="courses"
+            >Courses
+            <div></div
+          ></a>
+          <a href="#contact" data-scroll="contact"
+            >Contact
+            <div></div
+          ></a>
+        </div>
+        <div class="copyright">
+          <p>© 2024 Andjela | All rights reserved</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="loader">
+        <span>Loading...</span>
+      </div>
+      <div class="top">top</div>
+      <script src="script/animation.js"></script>
+      <script src="script/scripts.js"></script>
+      <script src="script/navbar.js"></script>
+      <script src="script/skills.js"></script>
+      <script src="script/number.js"></script>
+      <script src="script/tabs.js"></script>
+      <script src="script/form.js"></script>
+    </footer>
+  </body>
+</html>

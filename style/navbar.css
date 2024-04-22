@@ -1,0 +1,137 @@
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.navbar {
+  height: 100px;
+}
+
+.navbar .fixed {
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.navbar .right {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.navbar a {
+  color: white;
+}
+
+.navbar i {
+  font-size: 25px;
+}
+
+.navbar.sticky .fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 5%,
+    rgba(16, 3, 24, 1) 48%,
+    rgba(0, 0, 0, 1) 96%
+  );
+}
+
+.navbar.sticky .container {
+  height: 60px;
+}
+.navbar.sticky,
+.navbar.mobile {
+  transform: unset !important;
+  background: var(--background) !important;
+}
+
+.navbar a div {
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(89, 0, 149, 1) 51%,
+    rgba(0, 0, 0, 1) 96%
+  );
+
+  border-radius: 2px;
+  max-width: 0%;
+  transition: 0.5s;
+}
+
+.navbar a:hover div {
+  max-width: 100%;
+}
+
+.navbar .hamb {
+  width: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.navbar .hamb div {
+  width: 100%;
+  height: 2px;
+  background: white;
+  transition: 0.2s transform;
+  transform: rotate(0);
+}
+
+.navbar.mobile .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  overflow: hidden;
+  gap: 20px;
+  position: absolute;
+  top: 100px;
+  right: 0;
+  width: 50vw;
+  height: calc(100vh - 100px);
+  background: black;
+  color: white;
+  z-index: 10000;
+  padding-bottom: 20px;
+
+  padding-top: 20px;
+  border-top: 1px solid #1c1c1c;
+  border-left: 1px solid #1c1c1c;
+  max-height: 0px;
+  transition: 0.1s max-height;
+}
+
+.navbar.mobile .hamb div:nth-child(2) {
+  display: none;
+}
+.navbar.mobile .hamb div:nth-child(1) {
+  position: relative;
+  top: 12px;
+  transform: rotate(45deg);
+}
+.navbar.mobile .hamb div:nth-child(3) {
+  transform: rotate(-45deg);
+}
+
+.navbar.sticky.mobile .right {
+  top: 60px;
+  height: calc(100vh - 60px);
+}
+@media only screen and (max-width: 1200px) {
+  .navbar .right {
+    display: none;
+  }
+  .navbar .hamb {
+    display: flex;
+  }
+}
